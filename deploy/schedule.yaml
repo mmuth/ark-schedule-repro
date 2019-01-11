@@ -1,0 +1,25 @@
+apiVersion: ark.heptio.com/v1
+kind: Schedule
+metadata:
+  creationTimestamp: null
+  name: test-cluster-backup
+  namespace: heptio-ark
+spec:
+  schedule: "*/2 * * * *"
+  template:
+    excludedNamespaces: null
+    excludedResources: null
+    hooks:
+      resources: null
+    includeClusterResources: null
+    includedNamespaces:
+    - '*'
+    includedResources: null
+    labelSelector: null
+    storageLocation: ""
+    ttl: 720h0m0s
+    volumeSnapshotLocations: null
+status:
+  lastBackup: null
+  phase: ""
+  validationErrors: null
