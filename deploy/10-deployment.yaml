@@ -38,6 +38,8 @@ spec:
             - /ark
           args:
             - server
+            - --log-level # Add this line
+            - debug       # Add this line
           volumeMounts:
             - name: cloud-credentials
               mountPath: /credentials
